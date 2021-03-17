@@ -1,0 +1,181 @@
+/* fonts */
+
+@font-face {
+  font-family: Rubik-Medium;
+  src: url(../assets/fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+  font-family: Rubik-Regular;
+  src: url(../assets/fonts/Rubik-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-family: Rubik-Medium;
+  color: #1a214d;
+}
+
+body {
+  background-color: #e3e3e3;
+}
+
+/* colors */
+
+.main-color {
+  color: #1a214d;
+}
+
+.second-color {
+  color: #0072bb;
+}
+
+/* main nav bar styles */
+
+.bg-nav-main {
+  background-color: #1a214d;
+}
+
+.avatar-span {
+  background-color: #fff;
+  margin-right: 20px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-span svg {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  font-size: 24px;
+  color: #1a214d;
+}
+
+.top-nav-item {
+  color: #fff;
+  font-weight: bold;
+}
+
+.bottom-nav-item {
+  color: #0072bb;
+  font-weight: 600;
+}
+
+.bottom-nav-sub-item {
+  color: #0072bb;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.border-top-nav-sub-item {
+  border-top: 4px solid #0072bb;
+}
+
+.mycard svg path {
+  color: #d2d5dc;
+}
+
+/* body styles */
+
+.body-styles {
+  background-color: #e3e3e3;
+}
+
+.text-bold-color {
+  font-weight: bold;
+  color: #1a214d;
+}
+
+.card {
+  width: 24%;
+}
+
+.card svg {
+  font-size: 30px;
+}
+
+@media all and (min-width: 992px) {
+  .navbar .nav-item .dropdown-menu {
+    display: none;
+  }
+  .navbar .nav-item .dropdown-item:hover {
+    color: #0072bb;
+  }
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
+.content-title {
+  color: #0072bb;
+}
+
+.mycard {
+  border-width: 0px;
+  /* border-color: #f2f1f1; */
+  border-left-width: 4px;
+  box-shadow: 0 0 8px 0 rgba(146, 144, 144, 0.26);
+}
+
+.myborder-shadow {
+  border-width: 0px;
+  /* border-color: #f2f1f1; */
+  box-shadow: 0 0 8px 0 rgba(146, 144, 144, 0.26);
+}
+
+.myprimary-card {
+  border-left-color: #1a214d;
+}
+
+.myinfo-card {
+  border-left-color: #0072bb;
+}
+
+.mysuccess-card {
+  border-left-color: #62bbc2;
+}
+
+.mydanger-card {
+  border-left-color: #c73f20;
+}
+
+.font-regular {
+  font-family: Rubik-Regular;
+}
+
+.p-color-gray {
+  /* color: white */
+}
+
+.my-header {
+  color: #1a214d;
+}
+
+.my-card-chart {
+  border-width: 0px;
+  /* border-color: #f2f1f1; */
+  /* border-left-width: 4px; */
+  box-shadow: 0 0 8px 0 rgba(146, 144, 144, 0.26);
+}
+
+.my-header-card-chart {
+  background-color: hsl(216deg 33% 97%);
+  border-width: 0;
+}
+
+.fas {
+  color: hsl(222deg 13% 84%);
+}
+.my-fa-icon > path {
+  color: hsl(222deg 13% 84%) !important;
+}

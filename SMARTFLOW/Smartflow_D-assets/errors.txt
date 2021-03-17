@@ -1,0 +1,20 @@
+[2021-3-17 13:11:14] layer "no-reply@tessi.fr": Unsupported extension: fr
+[2021-3-17 13:11:15] layer "mailto:unsubscribe@tessi.fr": Unsupported extension: fr
+[2021-3-17 13:11:15] layer "no-reply@tessi.fr": Unsupported extension: fr
+[2021-3-17 13:11:15] layer "mailto:unsubscribe@tessi.fr": Unsupported extension: fr
+[2021-3-17 13:11:15] layer "no-reply@tessi.fr": Unsupported extension: fr
+[2021-3-17 13:11:15] layer "mailto:unsubscribe@tessi.fr": Unsupported extension: fr
+[2021-3-17 13:11:15] layer "Tessi Newsletter (no-reply@tessi.fr)": Expected end of input but ")" found.
+[2021-3-17 13:11:15] layer "04.3.4.a_Validation-BAT": Expected end of input but "_" found.
+[2021-3-17 13:11:15] layer "Tessi Newsletter (no-reply@tessi.fr)": Expected end of input but ")" found.
+[2021-3-17 13:11:15] layer "fichier-contacts-20210224.csv": Unsupported extension: csv
+[2021-3-17 13:11:15] layer "xxx@me.com": Unsupported extension: com
+[2021-3-17 13:11:15] layer "yyy@me.com": Unsupported extension: com
+[2021-3-17 13:11:15] layer "xxx@me.com": Unsupported extension: com
+[2021-3-17 13:11:15] layer "yyy@me.com": Unsupported extension: com
+[2021-3-17 13:11:15] layer "xxx@me.com": Unsupported extension: com
+[2021-3-17 13:11:15] layer "yyy@me.com": Unsupported extension: com
+[2021-3-17 13:11:15] layer "utilisateur@tessi.fr": Unsupported extension: fr
+[2021-3-17 13:11:15] layer "Tessi Newsletter (no-reply@tessi.fr)": Expected end of input but ")" found.
+[2021-3-17 13:11:15] layer "utilisateur@tessi.fr": Unsupported extension: fr
+[2021-3-17 13:11:15] layer "04.3.4.b_Validation-BAT": Expected end of input but "_" found.

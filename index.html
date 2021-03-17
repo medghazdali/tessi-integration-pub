@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <title>SmartFlow</title>
+</head>
+
+<body>
+    <!-- start HEADER -->
+
+    <nav class="navbar navbar-expand-lg bg-nav-main">
+        <div class="container p-4 pt-0 pb-0">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="" />
+            </a>
+
+            <div class="justify-content-end">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item d-flex align-items-center">
+                        <span class="avatar-span">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <h5 class="mb-0 me-2" style="color: #fff">Patrick CLAUDE</h5>
+                        <i class="fas fa-chevron-down" style="color: #fff"></i>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span>
+                                <i class="fas fa-bars" style="color: #fff"></i>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-white">
+        <div class="container p-1">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-between">
+                    <li class="nav-item">
+                        <a class="h6 nav-link bottom-nav-item" aria-current="page" href="#">Déposer un courrier</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link bottom-nav-item" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Concevoir un modèle
+                        </a>
+                        <ul class="dropdown-menu border-top-nav-sub-item" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="border-bottom">
+                                <a class="dropdown-item bottom-nav-sub-item text-center py-3" href="#">Emailing</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item bottom-nav-sub-item text-center py-3" href="#">SMS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Gérer mes campagnes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Suivre mes campagnes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Gérer les contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Gérer les inserts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Reporting</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <!-- FIN HEADER -->
+
+    <!-- start main -->
+
+    <main class="body-styles">
+        <div class="container p-4">
+            <p class="h2 mt-4 mb-4 my-header">Tableau de bord</p>
+
+            <div class="p-5 bg-body rounded shadow-sm">
+                <div class="row mb-4">
+
+                    <div class="d-flex justify-content-between align-items-center">
+                        <!-- <h4 style="color: #0072bb"></h4> -->
+                        <p class="h4 content-title">CHIFFRES CLÉS</p>
+
+                        <div class="flex-column justify-content-between w-50">
+                            <div class="d-flex justify-content-end align-items-center mb-2">
+                                <!-- <p class="mb-0 me-2 text-bold-color">Periode (par defaut):</p> -->
+                                <p class="h8 mb-0 me-2 text-bold-color font-regular mr-2">Période (par défaut) :</p>
+
+                                <div class="bg-body rounded-pill myborder-shadow  px-4 py-2">
+                                    <p class="mb-0  font-regular">
+                                        Depuis le debut de l'operation jusqu'a ce jour
+                                    </p>
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex justify-content-end align-items-center">
+
+
+                                <p class="mb-0 me-5 ">Selectioner : </p>
+                                <div class="bg-body rounded-pill myborder-shadow  p-4 py-2">
+                                    <div class="dropdown">
+                                        <button class="btn p-0 font-regular dropdown-toggle" type="button"
+                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                            Date du jour
+                                        </button>
+                                        <ul class="dropdown-menu m-0 p-0" aria-labelledby="dropdownMenuButton1">
+                                            <li><a class="dropdown-item" href="#">Action</a></li>
+                                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row  align-items-center mt-3">
+                        <div class="col-md-10">
+                            <div class="row justify-content-between mb-4 mt-4">
+
+                                <div class="card p-3 bg-body rounded  px-4 mycard myprimary-card">
+                                    <i class="my-fa-icon mb-2 far fa-envelope"></i>
+                                    <p class=" font-regular p-color-gray pr-4">Demandes <br /> reçues</p>
+                                    <h2 class="main-color">10 000</h2>
+                                </div>
+                                <div class="card p-3 bg-body rounded px-4 mycard myinfo-card">
+                                    <i class="mb-2 fas fa-hourglass"></i>
+                                    <p class=" font-regular p-color-gray">Dont demandes en <br /> attente d'instriction
+                                    </p>
+                                    <h2 class="second-color">1 000</h2>
+                                </div>
+                                <div class="card p-3 bg-body rounded px-4 mycard myinfo-card">
+                                    <i class="mb-2 fas fa-box-open"></i>
+                                    <p class=" font-regular p-color-gray">Dont demandes <br /> instriutes</p>
+                                    <h2 class="second-color">9 000</h2>
+                                </div>
+                                <div class="card p-3 bg-body rounded px-4 mycard mydanger-card">
+                                    <i class="mb-2 fas fa-archive"></i>
+
+                                    <p class=" font-regular p-color-gray">Dont demandes <br /> rejetées</p>
+                                    <h2 style="color: #c73f20">2 500</h2>
+                                </div>
+
+                            </div>
+
+                            <div class="row justify-content-between mb-4  ">
+
+                                <div class="card p-3 bg-body rounded px-4 mycard myprimary-card">
+                                    <i class=" mb-2 fas fa-bars"></i>
+                                    <p class=" font-regular p-color-gray">Total ouvertures <br /> de droits</p>
+                                    <h2 class="main-color">7 200</h2>
+                                </div>
+                                <div class="card p-3 bg-body rounded px-4 mycard myinfo-card">
+                                    <div class="mb-4"></div>
+                                    <p class=" font-regular p-color-gray">Dont suite à une <br /> demande initiale</p>
+                                    <h2 class="second-color">6 500</h2>
+                                </div>
+                                <div class="card p-3 bg-body rounded px-4 mycard myinfo-card">
+                                    <div class="mb-4"></div>
+                                    <p class="font-regular p-color-gray">Dont suite à une <br /> réclamation</p>
+                                    <h2 class="second-color">700</h2>
+                                </div>
+                                <div class="card p-3 bg-body rounded px-4 mycard mysuccess-card">
+                                    <i class="mb-2 fas fa-euro-sign"></i>
+
+                                    <p class="font-regular p-color-gray">Montant total <br /> des droits</p>
+                                    <h2 style="color: #62bbc2">12 500</h2>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="col-md-2  align-items-center mt-3">
+
+                            <div class="d-flex flex-column justify-content-center align-items-center w-20  p-4">
+                                <img src="./assets/icons/Calque 5.png" width="35" />
+                                <p class="mt-2 h6 text-bold-color text-center" style="text-decoration: underline;">
+                                    Telecharger le raport</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-between">
+                        <div class="col-md-7  py-2 px-0 pl-0  ">
+
+
+                            <div class="my-card-chart card w-100 ">
+                                <div class=" h5 my-header-card-chart card-header p-3 ">
+                                    Demandes recus / demandes instruites
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="myChart-polarArea" width="400" height="400"></canvas>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-5  py-2 ">
+
+                            <div class="my-card-chart card w-100 ">
+                                <div class="h5 my-header-card-chart card-header p-3 ">
+                                    Répartion des demandes instruites
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="myChart-line" width="400" height="400"></canvas>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
+
+    <script defer src="./js/charts.js"></script>
+
+</body>
+
+</html>
