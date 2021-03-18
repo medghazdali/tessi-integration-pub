@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <title>SmartFlow</title>
+</head>
+
+<body>
+    <!-- start HEADER -->
+
+    <nav class="navbar navbar-expand-lg bg-nav-main">
+        <div class="container p-4 pt-0 pb-0">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="" />
+            </a>
+
+            <div class="justify-content-end">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item d-flex align-items-center">
+                        <span class="avatar-span">
+                            <i class="fas fa-user"></i>
+                        </span>
+                        <h5 class="mb-0 me-2" style="color: #fff">Patrick CLAUDE</h5>
+                        <i class="fas fa-chevron-down" style="color: #fff"></i>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span>
+                                <i class="fas fa-bars" style="color: #fff"></i>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container p-1">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 ">
+                    <li class="nav-item">
+                        <a class=" nav-link bottom-nav-item" aria-current="page" href="#">Déposer un courrier</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link bottom-nav-item" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Concevoir un modèle
+                        </a>
+                        <ul class="dropdown-menu border-top-nav-sub-item" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="border-bottom">
+                                <a class="dropdown-item bottom-nav-sub-item text-center py-3" href="#">Emailing</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item bottom-nav-sub-item text-center py-3" href="#">SMS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Gérer mes campagnes</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Suivre mes campagnes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Gérer les contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Gérer les inserts</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Reporting</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <!-- FIN HEADER -->
+
+    <!-- start main -->
+
+    <main class="body-styles">
+        <div class="container p-4">
+            <p class="h2 mt-2 mb-4 my-header">Concevoir un emailing</p>
+
+
+            <div class="my-card-chart card w-100 ">
+                <div class="h5 my-header-card-paner card-header">
+
+                    <div class="row justify-content-between p-2 pr-4 pl-4 clearfix">
+                        <div class="col-xs-6 col-md-6 d-flex align-items-center  ">
+                            <p class="mb-0 align-items-center">List des modéles</p>
+                        </div>
+                        <div class="col-xs-6 col-md-6 d-flex justify-content-end  align-items-center ">
+                            <button type="button" class="btn btn-primary  my-btn myprimary-btn">Créer un modéle</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body my-body-card-paner ">
+
+                    <div class="row justify-content-between p-2 pr-4 pl-4 clearfix">
+                        <div class="col-xs-12 col-md-12 d-flex align-items-center  ">
+
+                            <div class="card w-100">
+                                <div class="card-header" style="background-color:#fff">
+
+                                    <div class="row justify-content-between pb-2">
+
+                                        <div class="col-xs-4 col-md-4 d-flex align-items-center  ">
+
+                                            <div class="input-group align-items-center ">
+
+                                                <i style='font-size:19px' class="m-2 mr-1 fas fa-sort-amount-down"
+                                                    for="inputGroupSelect01"></i>
+
+                                                <!-- <label class="" for="inputGroupSelect01">Options</label> -->
+                                                <select class="font-regular form-select" id="inputGroupSelect01">
+                                                    <option selected>Trier par date de mise a jour</option>
+                                                    <option value="1">One</option>
+                                                    <option value="2">Two</option>
+                                                    <option value="3">Three</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div
+                                            class="col-xs-6 col-md-3 d-flex justify-content-end  align-items-center align-self-end ">
+
+                                            <div class="input-group float-right">
+                                                <input placeholder="Rechercher" type="text"
+                                                    class="font-regular p-color-gray form-control border-b-l-radius border-t-l-radius"
+                                                    style="border-right: 0;"
+                                                    aria-label="Dollar amount (with dot and two decimal places)">
+                                                <span class="input-group-text border-b-r-radius border-t-r-radius" style="background:#fff;">
+
+                                                    <i style='font-size:19px;' class="fas fa-search"
+                                                        for="inputGroupSelect01"></i>
+
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="card-body p-0 pb-1 ">
+
+                                    <div class="row justify-content-between p-4 pt-2 pb-0">
+
+                                        <div class="col-xs-12 col-md-6 d-flex align-items-center  ">
+                                            <a style="margin-right: 20px;" href="">Creer un repertoire </a>
+                                            <a class="ml-4" href="">Acceder a la bibliotique des images </a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="row p-2 pr-4 pl-4 clearfix">
+
+
+
+
+
+                        <div class="my-repo  my-repo-first  col-xs-6 col-md-3 d-flex align-items-center mb-4 ">
+
+                            <div class="card my-card-repertoire" style="width: 18rem;">
+                                <a class="my-a-div" href="">
+
+                                    <div
+                                        class=" my-repo-first-icon d-flex flex-column justify-content-center align-items-center w-20  p-4">
+                                        <!-- <i class="fas fa-folder"></i> -->
+                                        <i class="fas fa-folder-plus"></i>
+
+
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <p class="h6 card-text">Nom-repertoire</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="my-repo col-xs-6 col-md-3 d-flex align-items-center mb-2 ">
+                            <div class="card my-card-repertoire" style="width: 18rem;">
+                                <a class="my-a-div" href="">
+                                    <img src="https://image.freepik.com/free-vector/flying-letters-with-mailbox-landing-page_52683-23589.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="h6 card-text">Newsletter_2021</p>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="my-repo col-xs-6 col-md-3 d-flex align-items-center mb-2 ">
+                            <div class="card my-card-repertoire" style="width: 18rem;">
+                                <a class="my-a-div" href="">
+                                    <img src="https://www.blogduwebdesign.com/wp-content/uploads/2020/04/bdw-template-boostrap-builder-2.jpg"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <p class="h6 card-text">Newsletter_2021</p>
+                                    </div>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+                    </div>
+
+                    <div class="row p-2 pr-4 pl-4 clearfix">
+
+                        <p class="p-color-gray font-regular">Total <span class="p-color-gray ">555</span> elements
+                            trouves</p>
+
+                    </div>
+                    <div class="row p-2 pr-4 pl-4 clearfix">
+                        <nav aria-label="Page navigation ">
+                            <ul class="my-pagination pagination justify-content-center align-items-center">
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#"> > </a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+
+            </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <nav class="navbar footer-nav  navbar-expand-sm justify-content-end">
+                <a class="navbar-brand main-color" href="#">CGV</a>
+                <a class="navbar-brand main-color" href="#">Mentions légales</a>
+                <a class="navbar-brand main-color" href="#">Données personelles</a>
+                <a class="navbar-brand main-color" href="#">Cookies</a>
+                <a class="navbar-brand main-color" href="#">Contact</a>
+                <a class="navbar-brand main-color" href="#">FAQ</a>
+              
+            </nav>
+
+            
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"
+        integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ=="
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+        integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+        crossorigin="anonymous"></script>
+
+    <script defer src="./js/charts.js"></script>
+
+</body>
+
+</html>
