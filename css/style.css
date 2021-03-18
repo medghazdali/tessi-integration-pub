@@ -55,11 +55,11 @@ body {
   overflow: hidden;
 }
 
-.avatar-span svg {
+.avatar-span i {
   position: absolute;
-  bottom: 0;
-  left: 5px;
-  font-size: 24px;
+  bottom: 7px;
+  left: 7px;
+  font-size: 18px;
   color: #1a214d;
 }
 
@@ -83,7 +83,7 @@ body {
   border-top: 4px solid #0072bb;
 }
 
-.mycard svg path {
+.mycard i {
   color: #d2d5dc;
 }
 
@@ -102,7 +102,7 @@ body {
   width: 24%;
 }
 
-.card svg {
+.card i {
   font-size: 30px;
 }
 
@@ -241,11 +241,11 @@ a {
   height: 160px;
 }
 
-.my-repo-first-icon>svg {
+.my-repo-first-icon>i {
   font-size: 75px !important;
 }
 
-.my-repo-first-icon>svg>path {
+.my-repo-first-icon>i>path {
   font-size: 50px !important;
   color: hsl(233deg 12% 58%)
 }
