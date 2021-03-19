@@ -10,17 +10,19 @@
   src: url(../assets/fonts/Rubik-Regular.ttf);
 }
 
-* {
+/* .my-body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-size: 14px;
   font-family: Rubik-Medium;
   color: #1a214d;
-}
+} */
 
-body {
-  /* background-color: #≈; */
+.my-body button,.my-body input,.my-body select,.my-body a,.my-body p{
+  font-size: 13px;
+  /* color: #1a214d; */
+  font-family: Rubik-Medium;
 }
 
 /* colors */
@@ -29,9 +31,9 @@ body {
   color: #1a214d;
 }
 
-.footer-nav > a {
+.footer-nav>a {
   color: #1a214d;
-  font-size:12px
+  font-size: 12px
 }
 
 .second-color {
@@ -231,7 +233,6 @@ a {
   box-shadow: 0px 0px 0px 2px #9e9e9e2e
 }
 
-
 .my-repo-first>.card {
   background-color: transparent;
   border: 0px
@@ -269,24 +270,61 @@ a {
   border-color: #0074bd;
 }
 
+.my-color-bleu1 {
+  color: #0074bd !important;
+}
+
 .color- {
   font-size: 75px !important;
 }
 
 .border-t-l-radius {
   border-top-left-radius: 15px;
-
 }
+
 .border-b-l-radius {
   border-bottom-left-radius: 15px;
-
 }
 
 .border-t-r-radius {
   border-top-right-radius: 15px;
-
 }
+
 .border-b-r-radius {
   border-bottom-right-radius: 15px;
+}
 
+.my-right-car-menu {
+  height: 250px
+}
+
+.my-right-car-menu>li>a>i {
+  font-size: 13px !important;
+  color: #0074bd !important;
+}
+
+.my-right-car-menu>li {
+  color: #0074bd !important;
+  border: 0px
+}
+
+.my-right-car-menu>li>a {
+  text-decoration: none
+}
+
+.my-right-car-menu>li>a>span {
+  margin-left: 6px;
+  color: #0074bd !important;
+  font-size: 13px !important;
+}
+
+.my-nav-link-tab>li {
+  width: 50%;
+}
+
+.my-nav-link-tab>li>p {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+  padding: 22px;
 }
