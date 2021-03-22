@@ -19,7 +19,7 @@
   color: #1a214d;
 } */
 
-.my-body button,.my-body input,.my-body select,.my-body a,.my-body p{
+.my-body button, .my-body input, .my-body select, .my-body a, .my-body p {
   font-size: 13px;
   /* color: #1a214d; */
   font-family: Rubik-Medium;
@@ -299,7 +299,7 @@ a {
 }
 
 .my-right-car-menu>li>a>i {
-  font-size: 13px !important;
+  font-size: 15px !important;
   color: #0074bd !important;
 }
 
@@ -313,18 +313,37 @@ a {
 }
 
 .my-right-car-menu>li>a>span {
-  margin-left: 6px;
+  margin-left: 8px;
   color: #0074bd !important;
-  font-size: 13px !important;
+  font-size: 15px !important;
 }
 
 .my-nav-link-tab>li {
   width: 50%;
 }
 
-.my-nav-link-tab>li>p {
+.my-nav-link-tab>li>button {
   text-align: center;
+  align-items: center;
   border-bottom: 1px solid #ddd;
   margin-bottom: 1rem;
-  padding: 22px;
+  width: 100%;
+  border-bottom: 1px solid hsl(233deg 12% 58%);
+  padding: 10px;
+  /* padding: 22px; */
+}
+
+.my-nav-link-tab .nav-link {
+  color: hsl(233deg 12% 58%);
+  border-bottom: 1px solid hsl(233deg 12% 58% / 26%);
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.my-nav-link-tab .nav-link.active {
+  color: #0074bd;
+  background-color: transparent;
+  /* border-inline: ; */
+  border-bottom: 3px solid #0074bd;
+  border-radius: 0;
 }

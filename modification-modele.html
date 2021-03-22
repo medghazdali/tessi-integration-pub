@@ -94,28 +94,24 @@
 
     <main class="body-styles">
         <div class="container p-4">
-            <p class="h2 mt-2 mb-4 my-header">Concevoir un emailing</p>
+            <h2 class="h2 mt-2 mb-4 my-header">Concevoir un emailing</h2>
             <div class="row justify-content-between pb-2">
 
-                <div class="col-md-2 col-sm-2">
-                    <div class="my-card-chart w-100 card" style="width: 18rem;">
-                        <ul class="list-group list-group-flush my-right-car-menu pt-4">
+                <div class="col-md-3 col-sm-3">
+                    <div class="my-card-chart w-100 card" >
+                        <ul class="list-group list-group-flush my-right-car-menu p-4 pt-4 pl-4">
                             <li class="list-group-item ">
-                                <a href=""><i class="p-1 fas fa-cog mr-2"
+                                <a href=""><i class="p-1 fas fa-cog"
                                         for="inputGroupSelect01"></i><span>Parametres</span></a>
                             </li>
-
-                            <li class="list-group-item">
-                                <a href="">
-                                    <i class="p-1 fas fa-pen pl-2" for="inputGroupSelect01"></i>
-                                    <span>Composition</span>
-                                </a>
+                            <li class="list-group-item ">
+                                <a href=""><i class="p-1 fas fa-pen"
+                                        for="inputGroupSelect01"></i><span>Composition</span></a>
                             </li>
 
-
                             <li class="list-group-item">
                                 <a href="">
-                                    <i class="p-1 fas fa-clipboard pl-2" for="inputGroupSelect01"></i>
+                                    <i class="p-1 fas fa-clipboard " for="inputGroupSelect01"></i>
                                     <span>Recapitulatif</span>
                                 </a>
 
@@ -125,10 +121,10 @@
                 </div>
 
 
-                <div class="col-md-10 col-sm-10">
+                <div class="col-md-9 col-sm-9">
 
 
-                    <div class="my-card-chart card w-100 ">
+                    <div class="my-card-chart card w-100 " style='min-height: 500px'>
                         <div class="h5 my-header-card-paner card-header">
 
                             <div class="row justify-content-between p-2 pr-4 pl-4 clearfix">
@@ -140,26 +136,54 @@
                             </div>
 
                         </div>
-                        <div class="card-body my-body-card-paner ">
+                        <div class="card-body my-body-card-paner p-4 ">
 
 
                             <ul class="w-100 my-nav-link-tab nav nav-pills mb-3" id="pills-tab" role="tablist">
+
                                 <li class="nav-item" role="presentation">
-                                    <p>Proprietes Model</p>
+                                    <div class="w-100"> </div>
+
+                                    <button class=" w-100 nav-link active" id="pills-1-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1"
+                                        aria-selected="true">Proprietes Model</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <p>Champs variables</p>
+                                    <!-- <p></p> -->
+                                    <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2"
+                                        aria-selected="false">Champs variables</button>
 
                                 </li>
-                               
+
                             </ul>
                             <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
-                                    aria-labelledby="pills-home-tab">...</div>
-                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                    aria-labelledby="pills-profile-tab">...</div>
-                                <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                    aria-labelledby="pills-contact-tab">...</div>
+                                <div class="tab-pane fade show active" id="pills-1" role="tabpanel"
+                                    aria-labelledby="pills-1-tab">
+
+                                    <form>
+
+                                        <div class="mb-3">
+                                            <label for="nomdemodule" class="form-label">Nom du modele</label>
+                                            <input type="text" class="form-control" id="nomdemodule"
+                                                aria-describedby="nom">
+                                        </div>
+                                      
+                                        <div class="mb-3">
+                                            <label for="mail" class="form-label">Objet du mail</label>
+                                            <input type="text" class="form-control" id="mail"
+                                                aria-describedby="mail">
+                                        </div>
+                                      
+                                        
+                                    </form>
+
+
+
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
+                                    ..xxxxxxxxxx.</div>
                             </div>
 
 
