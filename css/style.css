@@ -220,6 +220,11 @@ a {
   padding: 8px
 }
 
+.my-card-repertoire i {
+  color: hsl(233deg 12% 58%)
+
+}
+
 .my-card-repertoire p {
   color: hsl(233deg 12% 58%)
 }
