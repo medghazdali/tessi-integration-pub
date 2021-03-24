@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link href="./css/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="./css/all.css" rel="stylesheet">
+    <link href="./css/font.css" rel="stylesheet">
     <!--load all styles -->
     <link href="./css/style.css" rel="stylesheet" />
 
@@ -29,17 +29,17 @@
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item d-flex align-items-center">
                         <span class="avatar-span">
-                            <i class="fas fa-user"></i>
+                            <i class="fa fa-user"></i>
                         </span>
                         <h5 class="mb-0 me-2" style="color: #fff">Patrick CLAUDE</h5>
-                        <i class="fas fa-chevron-down" style="color: #fff"></i>
+                        <i class="fa fa-chevron-down" style="color: #fff"></i>
                     </li>
                     <li class="nav-item">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                             aria-label="Toggle navigation">
                             <span>
-                                <i class="fas fa-bars" style="color: #fff"></i>
+                                <i class="fa fa-bars" style="color: #fff"></i>
                             </span>
                         </button>
                     </li>
@@ -101,17 +101,17 @@
                     <div class="my-card-chart w-100 card">
                         <ul class="list-group list-group-flush my-right-car-menu p-4 pt-4 pl-4">
                             <li class="list-group-item ">
-                                <a href=""><i class="p-1 fas fa-cog"
+                                <a  class="active done-step" href=""><i class="p-1 fa fa-cog"
                                         for="inputGroupSelect01"></i><span>Parametres</span></a>
                             </li>
                             <li class="list-group-item ">
-                                <a href=""><i class="p-1 fas fa-pen"
+                                <a href=""><i class="p-1 fa fa-pencil"
                                         for="inputGroupSelect01"></i><span>Composition</span></a>
                             </li>
 
                             <li class="list-group-item">
                                 <a href="">
-                                    <i class="p-1 fas fa-clipboard " for="inputGroupSelect01"></i>
+                                    <i class="p-1 fa fa-clipboard " for="inputGroupSelect01"></i>
                                     <span>Recapitulatif</span>
                                 </a>
 
@@ -314,57 +314,9 @@
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="./js/addrowsscript.js"></script>
 
-    <script>
-
-
-
-        $(document).on("click", ".btn-variable-add", function (event) {
-
-            $(".row-of-fileds-variables").append('<div class="row mb-2 item-trakin align-items-center">' +
-                ' <div class="col-auto  col-10"><input type="text" class="form-control"></div>' +
-                ' <div class="col-2  justify-content-end flex-xxl-row-reverse"> ' +
-                ' <button class="btn-lien btn-lien-remove btn btn-sm btn-danger justify-content-center" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>' +
-                ' <button class="btn-lien btn-lien-add btn btn-sm btn-primary" type="button"> <i class="fa fa-plus" aria-hidden="true"></i></button>' +
-                ' </div></div>'
-            )
-        })
-
-        $(document).on("click", ".btn-variable-remove", function (event) {
-
-            var answer = confirm('Are you sure that you want to do this?');
-            if (!answer) {
-                event.preventDefault();
-            } else {
-                $(this).parent().parent().remove();
-
-            }
-        })
-
-        $(document).on("click", ".btn-lien-add", function (event) {
-
-            $(".row-of-fileds-trakins").append('<div class="row mb-2 item-trakin align-items-center">' +
-                ' <div class="col-auto col-3"><input type="text" class="form-control" id="balistrack"aria-describedby="text"></div>' +
-                ' <div class="col-auto  col-7"><input type="text" class="form-control"></div>' +
-                ' <div class="col-2  justify-content-end flex-xxl-row-reverse"> ' +
-                ' <button class="btn-lien btn-lien-remove btn btn-sm btn-danger justify-content-center" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>' +
-                ' <button class="btn-lien btn-lien-add btn btn-sm btn-primary" type="button"> <i class="fa fa-plus" aria-hidden="true"></i></button>' +
-                ' </div></div>'
-            )
-        })
-
-        $(document).on("click", ".btn-lien-remove", function (event) {
-
-            var answer = confirm('Are you sure that you want to do this?');
-            if (!answer) {
-                event.preventDefault();
-            } else {
-                $(this).parent().parent().remove();
-
-            }
-        })
-
-    </script>
+    
 
 </body>
 

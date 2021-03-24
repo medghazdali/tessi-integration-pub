@@ -10,14 +10,12 @@
   src: url(../assets/fonts/Rubik-Regular.ttf);
 }
 
-/* .my-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-size: 14px;
-  font-family: Rubik-Medium;
-  color: #1a214d;
-} */
+.my-body>main {
+  background-image: url("../assets/bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .my-body button, .my-body input, .my-body select, .my-body a, .my-body p {
   font-size: 13px;
@@ -235,9 +233,26 @@ a {
 .my-hover-div {
   z-index: 100;
   position: absolute;
-  background-color: red;
-  height: 120px;
-  display: block
+  background-color: #ffffffa6;
+  height: 160px;
+  display: none
+}
+
+.my-hover-div .card {
+  background: transparent;
+  border: 0px !important;
+  margin-left: 30px;
+}
+
+.my-hover-div>div>ul>li>a>i {
+  font-size: 18px;
+  color: #0074bd !important;
+}
+
+.my-hover-div>div>ul>li {
+  padding: 2px;
+  border: 0px;
+  background: transparent;
 }
 
 .my-card-repertoire:hover {
@@ -245,7 +260,13 @@ a {
 }
 
 .my-card-repertoire:hover .my-hover-div {
-  background-color: black;
+  /* background-color: black; */
+  display: flex;
+  background-color: #ffffffc7;
+  line-height: 1;
+  -webkit-backdrop-filter: blur(0.5px);
+  backdrop-filter: blur(0.5px);
+  padding: 20px;
 }
 
 .my-repo-first>.card {
@@ -315,23 +336,34 @@ a {
 
 .my-right-car-menu>li>a>i {
   font-size: 15px !important;
-  color: #0074bd !important;
+  /* color: #0074bd !important; */
 }
 
 .my-right-car-menu>li {
-  color: #0074bd !important;
   border: 0px
+}
+
+.my-right-car-menu>li>a {
+  color: hsl(233deg 12% 58%)
 }
 
 .my-right-car-menu>li>a {
   text-decoration: none
 }
 
-.my-right-car-menu>li>a>span {
+.my-right-car-menu>li>.active {
+  color: #0074bd !important;
+}
+
+.my-right-car-menu>li>.active>i {
+  color: #0074bd !important;
+}
+
+/* .my-right-car-menu>li>a>span {
   margin-left: 8px;
   color: #0074bd !important;
   font-size: 15px !important;
-}
+} */
 
 .my-nav-link-tab>li {
   width: 50%;
