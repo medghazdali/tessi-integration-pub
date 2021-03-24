@@ -98,7 +98,7 @@
             <div class="row justify-content-between pb-2">
 
                 <div class="col-md-3 col-sm-3">
-                    <div class="my-card-chart w-100 card" >
+                    <div class="my-card-chart w-100 card">
                         <ul class="list-group list-group-flush my-right-car-menu p-4 pt-4 pl-4">
                             <li class="list-group-item ">
                                 <a href=""><i class="p-1 fas fa-cog"
@@ -157,25 +157,78 @@
                                 </li>
 
                             </ul>
-                            <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-content mb-4" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-1" role="tabpanel"
                                     aria-labelledby="pills-1-tab">
 
-                                    <form>
+                                    <form class="mb-4">
 
-                                        <div class="mb-3">
+                                        <div class="mb-1">
                                             <label for="nomdemodule" class="form-label">Nom du modele</label>
-                                            <input type="text" class="form-control" id="nomdemodule"
+                                            <input disabled type="text" class="form-control" id="nomdemodule"
                                                 aria-describedby="nom">
                                         </div>
-                                      
-                                        <div class="mb-3">
+
+                                        <div class="mb-1">
                                             <label for="mail" class="form-label">Objet du mail</label>
-                                            <input type="text" class="form-control" id="mail"
+                                            <input type="text" class="form-control" id="mail" aria-describedby="mail">
+                                        </div>
+
+                                        <div class="mb-1">
+                                            <label for="emailexpediteur" class="form-label">Email de
+                                                l'expediteur</label>
+                                            <input type="email" class="form-control" id="emailexpediteur"
+                                                aria-describedby="nom">
+                                        </div>
+
+                                        <div class="mb-1">
+                                            <label for="nomexpediteur" class="form-label">Nom de l'expediteur</label>
+                                            <input type="text" class="form-control" id="nomexpediteur"
                                                 aria-describedby="mail">
                                         </div>
-                                      
-                                        
+
+                                        <div class="mb-1">
+                                            <label for="liendesabonnement" class="form-label">Lien de
+                                                desabonnement</label>
+                                            <input type="text" class="form-control" id="liendesabonnement"
+                                                aria-describedby="mail">
+                                        </div>
+
+
+                                        <div class="row row-of-fileds-trakins ">
+                                            <label for="nomexpediteur" class="form-label">Liens de tracking</label>
+                                            <div class="row item-trakin mb-2 align-items-center">
+
+                                                <div class="col-auto col-3">
+                                                    <input type="text" class="form-control" id="balistrack"
+                                                        aria-describedby="text">
+                                                </div>
+                                                <div class="col-auto  col-7">
+
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="col-2  justify-content-end flex-xxl-row-reverse">
+
+                                                    <button
+                                                        class="btn-lien btn-lien-remove btn btn-sm btn-danger justify-content-center"
+                                                        type="button">
+                                                        <i class="fa fa-times" aria-hidden="true"></i>
+                                                    </button>
+
+                                                    <button class="btn-lien btn-lien-add btn btn-sm btn-primary"
+                                                        type="button">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </button>
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+
+
                                     </form>
 
 
@@ -183,9 +236,49 @@
 
                                 </div>
                                 <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab">
-                                    ..xxxxxxxxxx.</div>
+
+                                    <p class="p-color-gray ">Les champs variables permettent de faire le lien avec les
+                                        entêtes de colonne du
+                                        fichier csv utilisé en entrée de l'envoi d'un mail utilisant ce modèle. Le nom
+                                        défini doit correspondre au libellé de la colonne associée. Les champs déclarés
+                                        seront disponibles dans la conception du modèle comme donnée dynamique.
+                                    </p>
+
+                                    <div class="row row-of-fileds-variables align-items-center mb-4">
+                                        <div class="row mb-2 item-trakin align-items-center">
+                                            <div class="col-auto col-10">
+                                                <input type="text" class="form-control">
+                                            </div>
+                                            <div class="col-2  justify-content-end flex-xxl-row-reverse">
+                                                <button
+                                                    class="btn-lien btn-variable-remove btn btn-sm btn-danger justify-content-center"
+                                                    type="button">
+                                                    <i class="fa fa-times" aria-hidden="true"></i>
+                                                </button>
+                                                <button class="btn-lien btn-variable-add btn btn-sm btn-primary"
+                                                    type="button">
+                                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                                </button>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
                             </div>
 
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <button class="btn btn-primary me-md-2 my-btn myprimary-btn"
+                                    type="button">Retour</button>
+                                <button class="btn btn-primary my-btn myprimary-btn" type="button">Acceder a la
+                                    composition</button>
+                                <button class="btn btn-primary my-btn myprimary-btn" type="button">Sauvdgarder</button>
+                            </div>
 
                         </div>
 
@@ -220,7 +313,58 @@
     </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 
+    <script>
+
+
+
+        $(document).on("click", ".btn-variable-add", function (event) {
+
+            $(".row-of-fileds-variables").append('<div class="row mb-2 item-trakin align-items-center">' +
+                ' <div class="col-auto  col-10"><input type="text" class="form-control"></div>' +
+                ' <div class="col-2  justify-content-end flex-xxl-row-reverse"> ' +
+                ' <button class="btn-lien btn-lien-remove btn btn-sm btn-danger justify-content-center" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>' +
+                ' <button class="btn-lien btn-lien-add btn btn-sm btn-primary" type="button"> <i class="fa fa-plus" aria-hidden="true"></i></button>' +
+                ' </div></div>'
+            )
+        })
+
+        $(document).on("click", ".btn-variable-remove", function (event) {
+
+            var answer = confirm('Are you sure that you want to do this?');
+            if (!answer) {
+                event.preventDefault();
+            } else {
+                $(this).parent().parent().remove();
+
+            }
+        })
+
+        $(document).on("click", ".btn-lien-add", function (event) {
+
+            $(".row-of-fileds-trakins").append('<div class="row mb-2 item-trakin align-items-center">' +
+                ' <div class="col-auto col-3"><input type="text" class="form-control" id="balistrack"aria-describedby="text"></div>' +
+                ' <div class="col-auto  col-7"><input type="text" class="form-control"></div>' +
+                ' <div class="col-2  justify-content-end flex-xxl-row-reverse"> ' +
+                ' <button class="btn-lien btn-lien-remove btn btn-sm btn-danger justify-content-center" type="button"><i class="fa fa-times" aria-hidden="true"></i></button>' +
+                ' <button class="btn-lien btn-lien-add btn btn-sm btn-primary" type="button"> <i class="fa fa-plus" aria-hidden="true"></i></button>' +
+                ' </div></div>'
+            )
+        })
+
+        $(document).on("click", ".btn-lien-remove", function (event) {
+
+            var answer = confirm('Are you sure that you want to do this?');
+            if (!answer) {
+                event.preventDefault();
+            } else {
+                $(this).parent().parent().remove();
+
+            }
+        })
+
+    </script>
 
 </body>
 

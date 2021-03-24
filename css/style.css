@@ -222,7 +222,6 @@ a {
 
 .my-card-repertoire i {
   color: hsl(233deg 12% 58%)
-
 }
 
 .my-card-repertoire p {
@@ -233,9 +232,20 @@ a {
   height: 200px
 }
 
+.my-hover-div {
+  z-index: 100;
+  position: absolute;
+  background-color: red;
+  height: 120px;
+  display: block
+}
+
 .my-card-repertoire:hover {
-  /* border: 1px solid #0074bd; */
   box-shadow: 0px 0px 0px 2px #9e9e9e2e
+}
+
+.my-card-repertoire:hover .my-hover-div {
+  background-color: black;
 }
 
 .my-repo-first>.card {
@@ -351,4 +361,43 @@ a {
   /* border-inline: ; */
   border-bottom: 3px solid #0074bd;
   border-radius: 0;
+}
+
+.btn-lien {
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+}
+
+.btn-lien>i {
+  font-size: 12px
+}
+
+.btn-lien-remove>i, .btn-variable-remove>i {
+  font-size: 12px;
+  color: hsl(0deg 84% 63%)
+}
+
+.btn-lien-add, .btn-variable-add {
+  background-color: #0074bd !important;
+  border-color: #0074bd;
+}
+
+.btn-lien-remove, .btn-variable-remove {
+  background-color: transparent !important;
+  border-color: hsl(0deg 84% 63%);
+}
+
+.img-max-h {
+  max-height: 700px;
+}
+
+.my-figure p {
+  margin-bottom: 2px
+}
+
+.my-figure .my-s-title {
+  color: hsl(233deg 12% 58%);
+  margin-left: 10px;
+  font-size: 11px
 }
