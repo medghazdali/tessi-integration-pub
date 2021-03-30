@@ -337,6 +337,7 @@ a {
 .my-right-car-menu>li>a>i {
   font-size: 15px !important;
   /* color: #0074bd !important; */
+  width:25px;
 }
 
 .my-right-car-menu>li {
