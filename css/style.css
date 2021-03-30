@@ -292,18 +292,18 @@ a {
 }
 
 .my-pagination>li>a {
-  border-radius: 40px !important;
-  margin: 5px;
+  border-radius: 30px !important;
+  margin: 2px;
   color: #1a214d;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   text-align: center;
-  padding: 8px;
+  padding: 5px;
 }
 
 .my-pagination .page-item.active .page-link {
-  background-color: #0074bd !important;
-  border-color: #0074bd;
+  background-color: hsl(232deg 50% 20%)  !important;
+  border-color: hsl(232deg 50% 20%) ;
 }
 
 .my-color-bleu1 {
@@ -432,4 +432,20 @@ a {
   color: hsl(233deg 12% 58%);
   margin-left: 10px;
   font-size: 11px
+}
+
+.btn-detail {
+  border-radius: 20px;
+  /* padding-right: 10px; */
+  /* padding-left: 10px; */
+  border: 2px solid hsl(203deg 100% 37%);
+  color:hsl(203deg 100% 37%);
+}
+
+.my-table > thead{
+  color:hsl(232deg 50% 20%);
+
+}
+.my-table > tbody{
+  color: hsl(233deg 12% 58%)
 }
