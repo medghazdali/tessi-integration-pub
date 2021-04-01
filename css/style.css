@@ -17,12 +17,13 @@
   background-size: cover;
 }
 
-.my-body button, .my-body select, .my-body a, .my-body p  , .my-body label{
+.my-body button, .my-body select, .my-body a, .my-body p, .my-body label {
   font-size: 13px;
   /* color: #1a214d; */
   font-family: Rubik-Medium;
 }
-.my-body input{
+
+.my-body input {
   font-size: 13px;
   color: #878aa1;
   font-family: Rubik-Regular;
@@ -307,8 +308,8 @@ a {
 }
 
 .my-pagination .page-item.active .page-link {
-  background-color: hsl(232deg 50% 20%)  !important;
-  border-color: hsl(232deg 50% 20%) ;
+  background-color: hsl(232deg 50% 20%) !important;
+  border-color: hsl(232deg 50% 20%);
 }
 
 .my-color-bleu1 {
@@ -342,7 +343,7 @@ a {
 .my-right-car-menu>li>a>i {
   font-size: 15px !important;
   /* color: #0074bd !important; */
-  width:25px;
+  width: 25px;
 }
 
 .my-right-car-menu>li {
@@ -445,17 +446,22 @@ a {
   /* padding-right: 10px; */
   /* padding-left: 10px; */
   border: 2px solid hsl(203deg 100% 37%);
-  color:hsl(203deg 100% 37%);
+  color: hsl(203deg 100% 37%);
 }
 
-.my-table > thead{
-  color:hsl(232deg 50% 20%);
-
+.my-table>thead {
+  color: hsl(232deg 50% 20%);
 }
-.my-table > tbody{
+
+.my-table>tbody {
   color: hsl(233deg 12% 58%)
 }
-.my-body-card-paner  label{
+
+.my-body-card-paner label {
   /* margin-bottom:0px !important */
   margin-bottom: .2rem;
+}
+
+.my-radio  {
+  vertical-align: top;
 }
