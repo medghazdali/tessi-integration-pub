@@ -12,7 +12,6 @@
     <link href="./css/font.css" rel="stylesheet">
     <!--load all styles -->
     <link href="./css/style.css" rel="stylesheet" />
-    <link href="./css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 
     <title>SmartFlow</title>
 </head>
@@ -99,6 +98,7 @@
             <div class="row justify-content-between pb-2">
 
 
+
                 <div class="col">
                     <div class="my-card-chart w-100 card">
                         <ul class="list-group list-group-flush my-right-car-menu p-1 pt-4">
@@ -107,7 +107,7 @@
                                         for="inputGroupSelect01"></i><span>Modèle</span></a>
                             </li>
                             <li class="list-group-item ">
-                                <a class="active" href=""><i class="p-1 fa fa-cog"
+                                <a href=""><i class="p-1 fa fa-cog"
                                         for="inputGroupSelect01"></i><span>Paramètres</span></a>
                             </li>
                             <li class="list-group-item ">
@@ -115,7 +115,7 @@
                                         for="inputGroupSelect01"></i><span>Destinataires</span></a>
                             </li>
                             <li class="list-group-item ">
-                                <a href=""><i class="p-1 fa fa-list-alt"
+                                <a class="active" href=""><i class="p-1 fa fa-list-alt"
                                         for="inputGroupSelect01"></i><span>Récapitulatif</span></a>
                             </li>
 
@@ -130,112 +130,80 @@
 
                             <div class="row justify-content-between p-2 pr-4 pl-4 clearfix">
                                 <div class="col-xs-12 col-md-12 d-flex align-items-center  ">
-                                    <p class="mb-0 align-items-center">Création d'une campagne (2/4) : Définition des
-                                        paramètres - <span class="font-weight-normal">Newsletter 2012- #2</span> </p>
+                                    <p class="mb-0 align-items-center">Création d'une campagne (4/4) : Récapitulatif --
+                                        <span class="font-weight-normal">Newsletter 2012- #2</span>
+                                    </p>
                                 </div>
 
                             </div>
 
                         </div>
-                        <div class="card-body my-body-card-paner p-2 ">
-
-                            <div class="card-body my-body-card-paner ">
+                        <div class="card-body my-body-card-paner p-4 ">
 
 
+                            <div class="row  align-items-center mb-4">
 
-                                <form class="mb-4">
+                                <div class="col-auto col-6">
+
 
                                     <div class="row mb-4">
-                                        <a style="margin-right: 20px;" href="">Modifier les paramètres du modèle </a>
-
-
+                                        <a style="margin-right: 20px;" href="">Aperçu de la campagne </a>
                                     </div>
 
-                                    <div class="mb-3">
-                                        <label for="nomdemodule" class="form-label">Nom de la campagne* </label>
-                                        <input type="text" value="Newsletter 2021 - #2" class="form-control"
-                                            id="nomdemodule" aria-describedby="nom">
-                                    </div>
+                                    <figure class="my-figure mb-4">
+                                        <p>Modèle sélectionné</p>
+                                        <p class="my-s-title">Newsletter_2021_2</p>
+                                    </figure>
+
+                                    <figure class="my-figure mb-4">
+                                        <p>Nom de la campagne</p>
+                                        <p class="my-s-title">Newsletter xxx : (moisHannée)</p>
+                                    </figure>
+
+                                    <figure class="my-figure mb-4">
+                                        <p>Objet du mail</p>
+                                        <p class="my-s-title">Newsletter xxx : (moisHannée)</p>
+                                    </figure>
 
 
-                                    <div class="mb-3">
-                                        <label for="mail" class="form-label">Objet du mail</label>
-                                        <input type="text" value="Tessi Newsletter (no-reply@tessi.fr)  2021 - #2"
-                                            class="form-control" id="mail" aria-describedby="mail">
-                                    </div>
+                                    <figure class="my-figure mb-4">
+                                        <p>Expéditeur</p>
+                                        <p class="my-s-title">no-reply@tessi.fr</p>
+                                    </figure>
 
+                                    <figure class="my-figure mb-4">
+                                        <p>Programmation de l'envoi</p>
+                                        <p class="my-s-title">Tessi Newsletter</p>
+                                    </figure>
 
+                                    <figure class="my-figure mb-4">
+                                        <p>Lien de désabonnement </p>
+                                        <p class="my-s-title">mailto:unsubscribe©tessi.fr</p>
+                                    </figure>
 
-                                    <div class="row row-of-fileds-trakins ">
-                                        <label for="nomexpediteur" class="form-label">Expéditeur</label>
-                                        <div class="row item-trakin mb-2 align-items-center">
+                                    <figure class="my-figure mb-4">
+                                        <p>Destinataires</p>
+                                        <p class="my-s-title">3 543 destinataires chargés à partir du fichier
+                                            "fichier-contacts-20210224.csv"</p>
+                                    </figure>
 
-                                            <div class="col-auto col-10">
-                                                <input type="text" value="Newsletter 2021 - #2" class="form-control"
-                                                    id="balistrack" aria-describedby="text">
-                                            </div>
-
-                                            <div class="col-2  justify-content-end flex-xxl-row-reverse">
-
-                                                <button
-                                                    class="btn-lien btn-parames-definition-remove btn btn-sm btn-danger justify-content-center"
-                                                    type="button">
-                                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                                </button>
-
-                                                <button class="btn-lien btn-parames-definition-add btn btn-sm btn-primary"
-                                                    type="button">
-                                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                                </button>
-
-                                            </div>
-
+                                    <figure class="my-figure mb-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Default radio
+                                            </label>
                                         </div>
 
-
-                                    </div>
-
+                                    </figure>
 
 
-                                    <div class="mb-3 col-5">
-                                        <label for="mail" class="form-label">Programmation de l'envoi</label>
+                                </div>
+                                <div class="col-auto col-6">
 
-                                        <div class="input-group date form_datetime col-md-5"
-                                            data-date="1979-09-16T05:25:07Z" data-date-format="dd MM yyyy - HH:ii p"
-                                            data-link-field="dtp_input1">
-
-                                            <input type="text" readonly class="form-control">
-
-                                            <!-- <span class="input-group-addon">
-                                                <span class="glyphicon glyphicon-th fa fa-cog"></span>
-
-                                            </span>  -->
-                                            <span class="input-group-addon input-group-text "
-                                                style="background:#fff;">
-
-                                                <i style='font-size:16px;' class="glyphicon glyphicon-th fa fa-calendar" ></i>
-
-                                            </span>
-
-                                        </div>
-
-                                   
-
-                                    </div>
-
-
-
-                                </form>
-
-                                <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-1 mb-2 mt-4">
-                                    <a class="btn btn-primary me-md-2 my-btn myprimary-btn"
-                                        href="">Retour</a>
-
-                                        <a class="btn btn-primary me-md-2 my-btn myprimary-btn"
-                                        href="">Précédent</a>
-
-                                        <a class="btn btn-primary me-md-2 my-btn myprimary-btn"
-                                        href="">Suivant</a>
+                                    <img class="w-100 img-max-h"
+                                        src="https://venngage-wordpress.s3.amazonaws.com/uploads/2019/02/Modern-Marketing-Email-Newsletter-Template.png" />
 
 
                                 </div>
@@ -243,6 +211,14 @@
                             </div>
 
 
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <button class="btn btn-primary me-md-2 my-btn myprimary-btn"
+                                    type="button">Retour</button>
+
+                                <button class="btn btn-primary my-btn myprimary-btn" type="button">Précédent</button>
+                                <button class="btn btn-primary my-btn myprimary-btn" type="button">Valider</button>
+                            </div>
 
                         </div>
 
@@ -277,25 +253,7 @@
     </footer>
 
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-    <script src="./js/addrowsscript.js"></script>
 
-    <script type="text/javascript" src="./js/jquery-1.8.3.min.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="./js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-    <script type="text/javascript" src="./js/bootstrap-datetimepicker.fr.js" charset="UTF-8"></script>
-    <script type="text/javascript">
-        $('.form_datetime').datetimepicker({
-            language:  'fr',
-            weekStart: 1,
-            todayBtn: 1,
-            autoclose: 1,
-            todayHighlight: 1,
-            startView: 2,
-            forceParse: 0,
-            showMeridian: 1
-        });
-
-    </script>
 
 </body>
 

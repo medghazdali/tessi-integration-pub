@@ -17,10 +17,15 @@
   background-size: cover;
 }
 
-.my-body button, .my-body input, .my-body select, .my-body a, .my-body p {
+.my-body button, .my-body select, .my-body a, .my-body p  , .my-body label{
   font-size: 13px;
   /* color: #1a214d; */
   font-family: Rubik-Medium;
+}
+.my-body input{
+  font-size: 13px;
+  color: #878aa1;
+  font-family: Rubik-Regular;
 }
 
 /* colors */
@@ -449,4 +454,8 @@ a {
 }
 .my-table > tbody{
   color: hsl(233deg 12% 58%)
+}
+.my-body-card-paner  label{
+  /* margin-bottom:0px !important */
+  margin-bottom: .2rem;
 }
