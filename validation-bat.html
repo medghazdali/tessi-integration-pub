@@ -188,14 +188,18 @@
                                     </figure>
 
                                     <figure class="my-figure mb-4">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                            id="flexRadioDefault1">
-                                        <label class="my-radio form-check-label" for="flexRadioDefault1">
-                                            Default radio
+                                        <!-- <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1"> -->
+
+                                        <input class="my-check-bon-tirer form-check-input" type="checkbox"
+                                            id="flexSwitchCheckDefault">
+
+                                        <label class="my-radio form-check-label" for="flexSwitchCheckDefault">
+                                            Bon à tirer
                                         </label>
 
 
-                                        <div class="row row-of-fileds-trakins ">
+                                        <div class="row row-of-fileds-trakins " style="display:none">
                                             <div class="row item-trakin mb-2 align-items-center">
 
                                                 <div class="col-auto col-9">
@@ -278,6 +282,23 @@
     <script src="./js/addrowsscript.js"></script>
 
 
+
+    <script>
+
+
+        $('.my-check-bon-tirer').click(function () {
+            if ($(this).prop("checked") == true) {
+                $(".row-of-fileds-trakins").show()
+            }
+            else if ($(this).prop("checked") == false) {
+                $(".row-of-fileds-trakins").hide()
+            }
+        });
+
+
+
+
+    </script>
 </body>
 
 </html>
