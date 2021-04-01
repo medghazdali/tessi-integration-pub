@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="./css/font.css" rel="stylesheet">
+    <!--load all styles -->
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <title>SmartFlow</title>
+</head>
+
+<body class="my-body">
+    <!-- start HEADER -->
+
+    <nav class="navbar navbar-expand-lg bg-nav-main">
+        <div class="container p-4 pt-0 pb-0">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" alt="" />
+            </a>
+
+            <div class="justify-content-end">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item d-flex align-items-center">
+                        <span class="avatar-span">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <h5 class="mb-0 me-2" style="color: #fff">Patrick CLAUDE</h5>
+                        <i class="fa fa-chevron-down" style="color: #fff"></i>
+                    </li>
+                    <li class="nav-item">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span>
+                                <i class="fa fa-bars" style="color: #fff"></i>
+                            </span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-white shadow-sm">
+        <div class="container p-1">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 ">
+                    <li class="nav-item">
+                        <a class=" nav-link bottom-nav-item" aria-current="page" href="#">Déposer un courrier</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link bottom-nav-item" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Concevoir un modèle
+                        </a>
+                        <ul class="dropdown-menu border-top-nav-sub-item" aria-labelledby="navbarDropdownMenuLink">
+                            <li class="border-bottom">
+                                <a class="dropdown-item bottom-nav-sub-item text-center py-3" href="#">Emailing</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item bottom-nav-sub-item text-center py-3" href="#">SMS</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Gérer mes campagnes</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Suivre mes campagnes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Gérer les contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Gérer les inserts</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link bottom-nav-item" aria-current="page" href="#">Reporting</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <!-- FIN HEADER -->
+
+    <!-- start main -->
+
+    <main class="body-styles">
+        <div class="container p-4">
+            <h2 class="h2 mt-2 mb-4 my-header">Gérer mes campagnes</h2>
+            <div class="row justify-content-between pb-2">
+
+
+                <div class="col">
+                    <div class="my-card-chart w-100 card">
+                        <ul class="list-group list-group-flush my-right-car-menu p-1 pt-4">
+                            <li class="list-group-item ">
+                                <a href=""><i class="p-1 fa fa-modx"
+                                        for="inputGroupSelect01"></i><span>Modèle</span></a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href=""><i class="p-1 fa fa-cog"
+                                        for="inputGroupSelect01"></i><span>Paramètres</span></a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a class="active " href=""><i class="p-1 fa fa-paper-plane"
+                                        for="inputGroupSelect01"></i><span>Destinataires</span></a>
+                            </li>
+                            <li class="list-group-item ">
+                                <a href=""><i class="p-1 fa fa-list-alt"
+                                        for="inputGroupSelect01"></i><span>Récapitulatif</span></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-10">
+
+
+                    <div class="my-card-chart card w-100 " style='min-height: 500px'>
+                        <div class="h5 my-header-card-paner card-header">
+
+                            <div class="row justify-content-between p-2 pr-4 pl-4 clearfix">
+                                <div class="col-xs-12 col-md-12 d-flex align-items-center  ">
+                                    <p class="mb-0 align-items-center">Création d'une campagne (3/4) : Destinataires
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <div class="card-body my-body-card-paner p-4 ">
+
+                            <div class="row justify-content-between p-2 pr-4 pl-4 clearfix">
+
+                                <div class="card w-100 p-2">
+
+                                    <div class="row ">
+
+                                        <div class="col-xs-4 col-md-3 d-flex  ">
+
+                                            <div class="input-group align-items-center ">
+                                                <button type="button"
+                                                    class="w-100 btn-detail btn btn-sm btn-outline-primary">
+                                                    <i style='font-size:16px;vertical-align: text-bottom;'
+                                                        class="fa fa-folder"></i>
+                                                    Parcourir</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4 col-md-4 d-flex align-items-center  ">
+
+                                            <div class="input-group align-items-center ">
+
+                                                <input type="text" value="fichier contacts csv" class="form-control"
+                                                    id="mail" aria-describedby="mail">
+
+
+
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+                            </div>
+
+                            <div class="row p-2 pr-4 pl-4 clearfix">
+
+                                <table class="my-table table table-borderless">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Email</th>
+                                            <th scope="col">Non</th>
+                                            <th scope="col">Prénom</th>
+                                            <th scope="col">Mantant</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>EE-2020-model</td>
+                                            <td>DEFAULT-COM-2020</td>
+                                            <td>En cours</td>
+                                            <td>12/12/2020 - 12:00</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>EE-2020-model</td>
+                                            <td>DEFAULT-COM-2020</td>
+                                            <td>En cours</td>
+                                            <td>12/12/2020 - 12:00</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12/12/2020</td>
+                                            <td>EE-2020-model</td>
+                                            <td>DEFAULT-COM-2020</td>
+                                            <td>En cours</td>
+
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+
+
+
+
+
+                            </div>
+
+                            <div class="row p-2 pr-4 pl-4 clearfix">
+
+                                <p class="p-color-gray font-regular">Total <span class="p-color-gray ">555</span>
+                                    elements
+                                    trouves</p>
+
+                            </div>
+                            <div class="row p-2 pr-4 pl-4 clearfix">
+                                <nav aria-label="Page navigation ">
+                                    <ul class="my-pagination pagination justify-content-center align-items-center">
+                                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">13</a></li>
+                                        <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                        <li class="page-item"><a class="page-link" href="#"> > </a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+
+
+                            <div class="d-grid gap-2 d-md-flex justify-content-md-end mt-4">
+                                <button class="btn btn-primary me-md-2 my-btn myprimary-btn"
+                                    type="button">Retour</button>
+
+                                <button class="btn btn-primary my-btn myprimary-btn" type="button">Précédent</button>
+                                <button class="btn btn-primary my-btn myprimary-btn" type="button">Suivant</button>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+
+            <nav class="navbar footer-nav  navbar-expand-sm justify-content-end">
+                <a class="navbar-brand main-color" href="#">CGV</a>
+                <a class="navbar-brand main-color" href="#">Mentions légales</a>
+                <a class="navbar-brand main-color" href="#">Données personelles</a>
+                <a class="navbar-brand main-color" href="#">Cookies</a>
+                <a class="navbar-brand main-color" href="#">Contact</a>
+                <a class="navbar-brand main-color" href="#">FAQ</a>
+
+            </nav>
+
+
+        </div>
+    </footer>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
